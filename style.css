@@ -1,0 +1,53 @@
+ul {
+    list-style-image: none; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+#playerImageHolder, #botImageHolder {
+    position: relative;
+    top: 0;
+    transition: top 1s ease-in-out; 
+}
+
+/*keyframes*/
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    11% {
+        transform: translateY(-15px); /* Move up */
+    }
+    22% {
+        transform: translateY(0); /* End position */
+    }
+    /* repeat 2 more times */
+    33% {
+        transform: translateY(0); 
+    }
+    44% {
+        transform: translateY(-15px); 
+    }
+    55% {
+        transform: translateY(0); 
+    }
+    66% {
+        transform: translateY(0); 
+    }
+    77% {
+        transform: translateY(-15px); 
+    }
+    88% {
+        transform: translateY(0); 
+    }
+}
+
+.animateHand {
+    animation: moveUpDown 1s ease-in-out; /* Animation properties */
+}
